@@ -5,7 +5,7 @@ python:
 before_script:
   - export PYTHONPATH=$PYTHONPATH:$PWD/package 
 install:
-  - pip install -r requirements.txt
+  - pip install tabulate
 script:
   - python testsuite.py
   - python TestER.py
