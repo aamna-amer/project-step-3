@@ -2,8 +2,10 @@ language: python
 python:
   - "3.4"
   - "3.5"
+install:
+  - echo "No dependencies to install"
 script:
-  - python test/TestER.py
-  - python test/TestG.py
-  - python test/TestMacro.py
-  - python test/TestWorkout.py
+  - python TestER.py
+  - python TestG.py
+  - python TestMacro.py
+  - python TestWorkout.py
