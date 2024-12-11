@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add the 'package' directory to sys.path so Python can find it
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../package')))
+
 import unittest
 from package.subpckg1.Goals import Goals 
 
