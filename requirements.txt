@@ -1,0 +1,4 @@
+# Python 3 dependencies
+pytest==6.2.5
+coverage==5.5
+tabulate==0.8.9
