@@ -91,3 +91,5 @@ It's methods include:
 
 **customize_workout_schedule()**  
   Allows the user to customize their workout schedule by editing individual days, changing the activity, duration, and time of day. Ensures input is validated before saving updates.
+
+https://app.travis-ci.com/aamna-amer/project-step-3.svg?token=QxFbpBhgrrJecX6pobud&branch=main
