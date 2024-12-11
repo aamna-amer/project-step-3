@@ -5,8 +5,9 @@ python:
 before_script:
   - export PYTHONPATH=$PYTHONPATH:$PWD/package 
 install:
-  - echo "No dependencies to install"
+  - pip install -r requirements.txt
 script:
+  - python testsuite.py
   - python TestER.py
   - python TestG.py
   - python TestMacro.py
