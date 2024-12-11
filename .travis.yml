@@ -1,7 +1,8 @@
 language: python
 python:
-  - "3.4"
-  - "3.5"
+  - "3.7"  # Change to a supported version
+  - "3.8"
+  - "3.9"
 before_script:
   - export PYTHONPATH=$PYTHONPATH:$PWD/package 
 install:
