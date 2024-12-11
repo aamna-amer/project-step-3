@@ -2,6 +2,8 @@ language: python
 python:
   - "3.4"
   - "3.5"
+before_script:
+  - export PYTHONPATH=$PYTHONPATH:$PWD/package 
 install:
   - echo "No dependencies to install"
 script:
