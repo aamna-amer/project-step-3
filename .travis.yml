@@ -1,0 +1,9 @@
+language: python
+python:
+  - "3.4"
+  - "3.5"
+script:
+  - python test/TestER.py
+  - python test/TestG.py
+  - python test/TestMacro.py
+  - python test/TestWorkout.py
