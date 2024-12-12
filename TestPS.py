@@ -1,7 +1,6 @@
 import sys
 import os
 
-# Add the 'package' directory to sys.path so Python can find it
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../package')))
 
 import unittest
@@ -14,13 +13,11 @@ class TestPersonalSummary(unittest.TestCase):
 
     @patch('builtins.input', side_effect=['John', '170', '70', '25', 'M'])
     def test_collect_info(self, mock_input):
-        # Create an instance of the class
+        
         ps = PersonalSummary()
 
-        # Call collect_info to "fake" the user input
         ps.collect_info()
 
-        # Check that the information has been correctly assigned
         self.assertEqual(ps.name, 'John')
         self.assertEqual(ps.height, 170.0)
         self.assertEqual(ps.weight, 70.0)
@@ -29,16 +26,13 @@ class TestPersonalSummary(unittest.TestCase):
 
     @patch('builtins.input', side_effect=['John', '170', '70', '25', 'M'])
     def test_calculate_BMI(self, mock_input):
-        # Create an instance of the class
+        
         ps = PersonalSummary()
 
-        # Call collect_info to assign values
         ps.collect_info()
 
-        # Call calculate_BMI
         ps.calculate_BMI()
 
-        # Check that the BMI is calculated correctly
         self.assertEqual(ps.BMI, 24)  # BMI = 70 / (1.7 ** 2) -> 24
 
     
