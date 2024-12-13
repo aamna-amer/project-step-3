@@ -93,3 +93,7 @@ It's methods include:
   Allows the user to customize their workout schedule by editing individual days, changing the activity, duration, and time of day. Ensures input is validated before saving updates.
 
 [![Build Status](https://app.travis-ci.com/aamna-amer/project-step-3.svg?token=QxFbpBhgrrJecX6pobud&branch=main)](https://app.travis-ci.com/aamna-amer/project-step-3)
+
+
+PYPI Link: 
+https://pypi.org/project/project-step-3/0.1.0/
